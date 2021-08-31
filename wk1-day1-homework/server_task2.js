@@ -6,7 +6,6 @@ const hostname = 'localhost';
 const port = 5000;
 
 const server = http.createServer((req, res) => {
-    console.log("The NodeJS server on port 5000 is now running…")
     if (req.method === 'GET') {
         var fileUrl = req.url;
         
@@ -27,5 +26,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`The NodeJS server on port ${port} is now running…`);
 });
